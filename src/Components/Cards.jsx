@@ -33,12 +33,12 @@ const Cards = ({ id, name, image, song, totalSongs, audioRef, isCurrentSong, onC
 
   return (
     <section className='card-component w-48 h-48 flex justify-center items-center'>
-      <div onClick={handleCardClick} className='each-card flex duration-700 w-48 h-48 justify-center cursor-pointer hover:bg-[--babyPowderLight] rounded-xl items-center flex-col text-center' key={id}>
+      <div onClick={handleCardClick} className='each-card flex duration-700 w-44 h-48 justify-center cursor-pointer hover:bg-[--babyPowderLight] items-center flex-col text-center' key={id}>
         <div className='img-container w-32 h-32 my-3 shadow-xl rounded-xl duration-700 hover:scale-90'>
-          <img onClick={handleCardClick} src={image} className='card-img w-32 h-32 rounded-xl  border-solid border-2 border-[--pigmentGreen] object-cover' alt="Genre photo" />
+          <img onClick={handleCardClick} src={image} className='card-img w-32 h-32  border-solid border-2 border-[--babyPowder] object-cover' alt="Genre photo" />
         </div>
-        <p className='song-title cursor-pointer text-xs pt-1 font-extrabold text-[--richBlack] hover:text-[--pigmentGreen]-600'>{name}</p>
-        <p className='song-artist text-xs w-10/12 pb-1 text-wrap font-semibold text-[--crimson]'>{totalSongs}</p>
+        <p className='song-title cursor-pointer text-xs pt-1 font-extrabold text-[--babyPowder] hover:text-[--pigmentGreen]-600'>{name}</p>
+        <p className='song-artist text-xs w-full pb-1 font-semibold text-[--pigmentGreen]'>{totalSongs}</p>
       </div>
       <audio ref={audioRef} src={audioSource} type='audio/mpeg' controls style={{ display: 'none' }} />
     </section>
