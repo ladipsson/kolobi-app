@@ -67,7 +67,7 @@ const AudioPlay = ({ audioRef, onNextSong, onPrevSong, currentSong, isPlaying, t
     // }
 
     return (
-        <div className='flex justify-center items-center gap-x-3.5 py-2.5 px-2.5 mt-4'>
+        <div className='audioplay-container flex justify-center items-center gap-x-3.5 py-2.5 px-2.5 mt-4'>
 
             <div className='songs-control flex flex-col  gap-2 justify-center items-center flex-1'>
                 <div className='controls-btn  text-[--babyPowder] flex gap-x-6 justify-center'>
