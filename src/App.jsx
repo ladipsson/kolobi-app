@@ -40,15 +40,15 @@ const App = () => {
   };
 
   return (
-    <section className='main-section bg-[--crimson] absolute rounded-2xl overflow-hidden inset-0 mx-auto my-auto h-[44rem] w-3/6'>
-      <main className='main bg-[--babyPowder] h-[36rem] shadow-2xl  overflow-hidden rounded-t-2xl rounded-b-3xl '>
+    <section className='main-section bg-[--richBlack] absolute rounded-2xl overflow-hidden inset-0 mx-auto my-auto h-[44rem] w-3/6'>
+      <main className='main bg-[--richBlack] h-[36rem] shadow-2xl  overflow-hidden rounded-t-2xl rounded-b-3xl '>
         <header className='header'>
           <Nav />
         </header>
-        <section className=' card-area flex justify-between items-center gap-x-1.5 h-full '>
+        <section className=' card-area flex justify-between items-center h-full '>
           <Leftpanel />
-          <section className='card-container w-9/12 h-full pr-2'>
-            <h1 className='title uppercase text-2xl text-center text-[--crimson] font-bold'>Click and Listen to songs</h1>
+          <section className='card-container w-9/12 pt-3 h-full bg-[--gunmetal]'>
+            <h1 className='title capitalize text-2xl text-center text-[--babyPowder] font-bold'>Click and Listen to songs</h1>
             <div className='card grid grid-cols-3'>
               {Content.map((content, index) => (
                 <Cards
